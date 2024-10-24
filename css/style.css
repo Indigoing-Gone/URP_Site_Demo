@@ -1,0 +1,240 @@
+@import url("general/reset.css");
+body {
+  background-color: #9b7a5b;
+}
+
+.website-content {
+  background-color: #c8b89e;
+  width: 75%;
+  margin: auto;
+}
+
+.game-dropdown {
+  background-color: lightcoral;
+  width: 95%;
+  height: auto;
+  margin: auto;
+}
+.game-dropdown > .dropdown-header {
+  width: 100%;
+  height: 70px;
+}
+.game-dropdown[open] .arrow {
+  transform: rotate3d(1, 0, 0, 180deg);
+}
+.game-dropdown[open] > .dropdown-header > .inline-list {
+  display: none;
+}
+.game-dropdown[open] > .dropdown-header > .openheader {
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+}
+.game-dropdown > .content > .contentbox {
+  background-color: #ded1ad;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: center;
+}
+.game-dropdown > .content > .contentbox > .column {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex: 50%;
+}
+.game-dropdown > .content > .contentbox > .column > .textbox {
+  background-color: #f4f3de;
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  flex-direction: column;
+  padding: 20px;
+  line-height: normal;
+}
+.game-dropdown > .content > .contentbox > .column > .textbox > .title {
+  font-size: 20pt;
+}
+.game-dropdown > .content > .contentbox > .column > .textbox.body, .game-dropdown > .content > .contentbox > .column > .textbox .body {
+  font-size: 15pt;
+}
+.game-dropdown > .content > .contentbox > .column > .textbox.body.-small, .game-dropdown > .content > .contentbox > .column > .textbox .body.-small {
+  font-size: 13pt;
+}
+.game-dropdown > .content > .contentbox > .column > .textbox.-left {
+  margin-left: 12%;
+}
+.game-dropdown > .content > .contentbox > .column > .textbox.-right {
+  margin-right: 12%;
+}
+.game-dropdown > .content > .contentbox > .column > .imagebox {
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.game-dropdown > .content > .contentbox > .column > .imagebox > .image {
+  object-fit: cover;
+  border-radius: 8px;
+}
+.game-dropdown > .content > .contentbox > .column > .imagebox > .image.-top {
+  width: 36%;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+.game-dropdown > .content > .contentbox > .column > .imagebox > .image.-bottom {
+  width: 58%;
+  height: auto;
+  aspect-ratio: 10/7;
+  margin-top: 40px;
+}
+
+.dropdown-header {
+  background-color: #ece7ca;
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+  list-style: none;
+}
+.dropdown-header ::-webkit-details-marker {
+  display: none;
+}
+.dropdown-header > .inline-list {
+  background-color: #ece7ca;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+}
+.dropdown-header > .openheader {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.dropdown-header > .openheader > .item {
+  background-color: #ece7ca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+.dropdown-header > .openheader > .item.-name {
+  width: 30%;
+  height: 60px;
+  position: relative;
+  top: 30px;
+  left: 2%;
+  font-size: 27pt;
+}
+.dropdown-header > .openheader > .item.-info {
+  width: 20%;
+  height: 80px;
+  position: relative;
+  top: 20px;
+  left: 5%;
+  font-size: 18pt;
+}
+.dropdown-header > .openheader > .item.-topic {
+  width: 25%;
+  height: 60px;
+  position: relative;
+  top: 30px;
+  margin-left: auto;
+  font-size: 22pt;
+}
+.dropdown-header > .arrowbox {
+  background-color: #ece7ca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 0;
+  min-width: 8%;
+  margin-left: auto;
+}
+.dropdown-header > .arrowbox > .arrow {
+  content: "";
+  background: url("../assets/arrow.png") no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  width: 74px;
+  height: 40px;
+  scale: 60%;
+  transition: 0.2s;
+}
+
+.table-key {
+  background-color: #ded1ad;
+  width: 95%;
+  height: 70px;
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+  margin: auto;
+}
+.table-key > .inline-list {
+  background-color: #ece7ca;
+  width: 92%;
+  height: 100%;
+}
+
+.inline-list {
+  background-color: lightgreen;
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+}
+.inline-list > .item {
+  background-color: lightblue;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20pt;
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+.inline-list > .item {
+  overflow: hidden;
+  max-width: 100%;
+}
+.inline-list > .item.-light {
+  background-color: #ece7ca;
+}
+.inline-list > .item.-dark {
+  background-color: #f4f3de;
+}
+.inline-list > .item.-name {
+  flex-basis: 26%;
+}
+.inline-list > .item.-topic {
+  flex-basis: 20%;
+}
+.inline-list > .item.-time {
+  flex-basis: 16%;
+}
+.inline-list > .item.-players {
+  flex-basis: 12%;
+}
+.inline-list > .item.-cost {
+  flex-basis: 8%;
+}
+.inline-list > .item.-effectiveness {
+  flex-basis: 18%;
+}
+
+/*# sourceMappingURL=style.css.map */
